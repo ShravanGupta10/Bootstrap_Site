@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+}
+/* Header Section */
+.header{
+    height:50px;
+}
+.header .head-name p{
+  line-height:50px;
+  font-size:18px;
+  margin-left:30px;
+  color:#fff;
+}
+.header .user-input{
+    height:50px;
+}
+.user-input .input-list{
+    display:flex;
+    justify-content: space-evenly;
+}
+.user-input .input-list .email-box,.password{
+    margin-top:5px;
+    line-height:40px;
+    border-radius:10px;
+}
+.user-input .input-list .sign-in{
+    margin-top:5px;
+    line-height:40px;
+    border-radius:10px;
+}
+/* End Header Section */
+
+/* Creative section */
+.creative-box{
+    height:350px;
+    position: relative;
+    background-color:whitesmoke;                                                                                                                                                                                                                                                                                                                                               ;
+}
+.creative-box .box-content{
+    width:60%;
+    height:250px;
+    position: absolute;
+    top: 70px;
+    left: 45px;   
+}
+.creative-box .box-content .learn_more{
+    width:20%;
+    line-height:40px;
+    border-radius:5px;
+    background-color:blueviolet;
+}
+.head-box{
+    height:300px;
+    position: relative;
+    border:1px dotted rgba(0, 0, 0, 0.2);
+}
+.head-box .head-box2{
+    position: absolute;
+    top:50px;
+    left:45px;
+    height:230px;
+    width:60%;
+}
+.head-box .head-box2 .view-detail{
+    width:15%;
+    line-height:40px;
+    border-radius:5px;
+    background-color:whitesmoke;
+    border-radius:2px solid black;
+}
+/* END Creative Section */
+
+/* Album Section */
+
+/* .Album{
+    height:400px;
+} */
+.Album .Album-example{
+    width:40%;
+    height:230px;
+    display: inline-block;
+    margin:40px 310px;
+}
+.Album .Album-example .first{
+    font-size:20px;
+}
+.Album .Album-example .box-first,.box-second{
+    display: inline-block;
+    width:40%;
+    line-height:40px;
+    margin:0 auto;
+    margin-left:20px;
+    border-radius:5px;
+}
+/* End Album Section */
+.main{
+
+}
+.main .box-main{
+   display: flex;
+   justify-content: space-between;
+}
+.main .box-main .box1{
+    height:auto;
+    width:32%;
+}
+.main .box-main .box1 .show-box{
+    width:100%;
+    line-height:200px;
+    background-color: aqua;
+    font-size:20px;
+}
+.main .box-main .box1 .content{
+    width:100%;
+    /* height:150px; */
+    border:1px dotted rgba(0, 0, 0, 0.2);
+    padding:20px 0px;
+}
+.main .box-main .box1 .content .box-visit{
+    width:40%;
+    height:40px;
+    margin:20px 20px;
+    /* background-color: aqua; */
+    display: flex;
+}
+.main .box-main .box1 .content .box-visit .visit,.edit{
+    width:50%;
+    line-height:40px;
+    border:1px dotted rgba(0, 0, 0, 0.2);
+}
+</style>
+<link rel="stylesheet" href="Boot.css">
+</head>
+<body>
+<!---Header-->
+    <div class="container-fluid bg-secondary">
+     <div class="container bg-dark">
+        <div class="header">
+            <div class="row">
+               <div class="head-name col-lg-6">
+                  <p>Project name</p>
+               </div>
+               <div class="user-input col-lg-6">
+                  <div class="row input-list">
+                   <div class="col-lg-4 bg-white email-box">Email</div>
+                   <div class="col-lg-4 bg-white password">Password</div>
+                   <div class="col-lg-2 bg-success text-white  text-center sign-in">Sign in</div>
+                  </div>
+               </div>
+            </div>
+        </div>
+      </div>
+    </div>
+<!---END Header-->
+<!--Creative section-->
+<div class="container-fluid">  
+   <div class="container creative-box">
+      <div class="box-content">
+         <p class="display-4"><strong>Hello, World!</strong></p>
+         <p class="display-5 text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim ducimus delectus quod animi quis iure et, neque amet accusamus, 
+           ratione modi eveniet molestiae molestias accusantium. Quo iste asperiores magnam maxime.</p>
+         <div class="learn_more text-white text-center">Learn More</div>
+      </div>
+    </div> 
+    <div class="container head-box">
+        <div class="head-box2">
+            <p class="display-4"><strong>Heading</strong></p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt totam blanditiis ea nostrum eaque recusandae saepe beatae, 
+            quos porro optio tempore molestias architecto, vitae minus facere, reiciendis laudantium in nisi.</p>
+            <div class="view-detail text-center">View Details</div>
+        </div>
+    </div>
+   </div>   
+<!--End Creative section-->  
+<!-- Album Section -->
+<div class="container-fluid">  
+   <div class="container Album ">
+       <div class="Album-example ">
+        <p class="text-center first"><strong>Album Example</strong></p>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi laborum, consequuntur fugiat illo 
+            exercitationem nostrum optio debitis culpa quisquam,<br>
+             dolores illum veritatis iure numquam.</p>
+        <div class="box-first  bg-info text-center text-white">Main call Action</div>
+        <div class="box-second bg-dark text-center text-white">Secondary Action</div>
+       </div>
+   </div>
+</div>
+<!-- End Album Section -->
+<!--Main Section-->
+<div class="container-fluid">  
+    <div class="container main">
+      <div class="row box-main">
+        <div class="bg-dark box1">
+            <div class="bg-dark text-center text-white show-box">
+               <strong>Thumbnail</strong>
+            </div>
+            <div class="content bg-white">
+                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas beatae dicta, veniam totam, 
+                veritatis itaque reprehenderit recusandae quis quasi tempora vitae nemo nam iusto quidem hic rerum.
+                Reiciendis, dolore ullam.</p>
+            <div class="box-visit">
+              <div class="text-center text-muted visit ">visit</div>  
+              <div class="text-center text-muted edit">Edit</div>  
+            </div>
+           </div>
+        </div>
+        <div class="bg-dark box1">
+            <div class="bg-dark text-center text-white show-box">
+               <strong>Thumbnail</strong>
+            </div>
+            <div class="content bg-white">
+                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas beatae dicta, veniam totam, 
+                veritatis itaque reprehenderit recusandae quis quasi tempora vitae nemo nam iusto quidem hic rerum.
+                Reiciendis, dolore ullam.</p>
+            <div class="box-visit">
+              <div class="text-center text-muted visit ">visit</div>  
+              <div class="text-center text-muted edit">Edit</div>  
+            </div>
+           </div>
+        </div>
+        <div class="bg-dark box1">
+            <div class="bg-dark text-center text-white show-box">
+               <strong>Thumbnail</strong>
+            </div>
+            <div class="content bg-white">
+                <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas beatae dicta, veniam totam, 
+                veritatis itaque reprehenderit recusandae quis quasi tempora vitae nemo nam iusto quidem hic rerum.
+                Reiciendis, dolore ullam.</p>
+            <div class="box-visit">
+              <div class="text-center text-muted visit ">visit</div>  
+              <div class="text-center text-muted edit">Edit</div>  
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!-- End Main Section-->
+</body>
+</html>
